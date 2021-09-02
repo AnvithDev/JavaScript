@@ -1,7 +1,15 @@
-console.log('Hey this is my first piece of Js code')
+// Data types 
+// Primitive data types 
 
-console.log(false,134323,'String',{ name:"Anvith"})
+let A=2131,Name='alkdjfal'
 
-console.warn("Don't press the button!!!!")
 
-console.error("This is an error by me")
+console.log( A,Name)
+
+// Non Primitive data types
+
+let arr=[1,2,3,4,5]
+
+arr.push('adjlsakjda')
+
+console.log(arr)
