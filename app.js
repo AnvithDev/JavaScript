@@ -1,26 +1,25 @@
-// Assignment operators
+// Logical operators
 
-let name ='2'
+const a = 2
+const b = 3
 
-let a=19
+console.log('a == b', a == b)
+console.log('a != b', a != b)
+console.log('')
 
-a*=name
+console.log('Truth table for AND')
+console.log('')
 
-console.log(a)
+console.log('false && false', false && false)
+console.log('true && true', true && true)
+console.log('true && false', true && false)
+console.log('false && true', false && true)
+console.log('')
 
-// Comparision operators
+console.log('Truth table for OR')
+console.log('')
 
-let b=21,c=5
-
-console.log(a)
-console.log(b>c)
-console.log(b<c)
-console.log(c==b)
-console.log(c<=b)
-console.log(c>=b)
-
-const d='5'
-
-console.log(c==d) //true
-
-console.log(c===d)  //false (c===d)-> c==d && typeof c==typeof d
+console.log('false||false', false ||false)
+console.log('true||true', true ||true)
+console.log('true||false', true ||false)
+console.log('false||true', false ||true)
