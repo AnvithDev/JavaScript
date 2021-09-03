@@ -1,15 +1,22 @@
-// Data types 
-// Primitive data types 
+//Arithmatic operators
 
-let A=2131,Name='alkdjfal'
+const specific_name="Anvith"
 
+const specific=" NotAnvith"
 
-console.log( A,Name)
+console.log(specific_name+specific)  //concatenation
 
-// Non Primitive data types
+let a=2,b=5
 
-let arr=[1,2,3,4,5]
+console.log(a+b)
+console.log(a-b)
+console.log(a*b)
+console.log(a/b)
+console.log(a ** b)
+console.log(b%a)
 
-arr.push('adjlsakjda')
+let c = 5
 
-console.log(arr)
+c *= 5
+
+console.log(c)
