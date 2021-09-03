@@ -1,22 +1,26 @@
-//Arithmatic operators
+// Assignment operators
 
-const specific_name="Anvith"
+let name ='2'
 
-const specific=" NotAnvith"
+let a=19
 
-console.log(specific_name+specific)  //concatenation
+a*=name
 
-let a=2,b=5
+console.log(a)
 
-console.log(a+b)
-console.log(a-b)
-console.log(a*b)
-console.log(a/b)
-console.log(a ** b)
-console.log(b%a)
+// Comparision operators
 
-let c = 5
+let b=21,c=5
 
-c *= 5
+console.log(a)
+console.log(b>c)
+console.log(b<c)
+console.log(c==b)
+console.log(c<=b)
+console.log(c>=b)
 
-console.log(c)
+const d='5'
+
+console.log(c==d) //true
+
+console.log(c===d)  //false (c===d)-> c==d && typeof c==typeof d
