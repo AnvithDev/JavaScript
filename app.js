@@ -1,9 +1,17 @@
-// const element = document.getElementById('selectme')
 
-// const element =document.getElementsByClassName('heading')
+const element= document.querySelector('#selectme')
 
-// const element = document.getElementsByTagName('div')
 
-const element= document.querySelectorAll('div')
 
-console.log(element)
+// console.log(element.classList)
+
+// element.classList.add('five')
+
+// console.log(element.classList)
+
+// const body=document.querySelector('body')
+
+// console.log(body.classList.toggle('dark'))
+
+const value=document.querySelector('body').classList.contains('one')
+console.log(value)
