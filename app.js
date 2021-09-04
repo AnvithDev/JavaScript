@@ -1,17 +1,9 @@
 
-const element= document.querySelector('#selectme')
+const button=document.querySelector('button')
+const body = document.querySelector('body')
 
+console.log(button,body)
 
-
-// console.log(element.classList)
-
-// element.classList.add('five')
-
-// console.log(element.classList)
-
-// const body=document.querySelector('body')
-
-// console.log(body.classList.toggle('dark'))
-
-const value=document.querySelector('body').classList.contains('one')
-console.log(value)
+button.addEventListener('click',()=>{
+    body.classList.toggle('dark')
+})
