@@ -1,30 +1,27 @@
 
-// const rock=document.querySelector('#rock')
-// const paper=document.querySelector('#paper')
-// const scissor=document.querySelector('#scissor')
-
-// console.log(rock,paper,scissor)
-// var Name=10
-
-// function logName(){
-//     let Name="sdjfaladkfj"
-//     console.log(typeof Name)
-// }
-
-// logName()
+const rock = document.querySelector('#rock')
+const paper = document.querySelector('#paper')
+const scissor = document.querySelector('#scissor')
+const board = document.querySelector("#board")
 
 
-console.log(add(99))
-console.log(minus(100))
-
-function add(a=0,b=0){
-    let sum=a+b
-    return sum
+const handler = (e) => {
+    const action = e.target.id
+    switch(action){
+        case "rock":
+            board.innerHTML="Rock beats scissors"
+            break
+        case "paper":board.innerHTML="Paper beats Rock"
+                        break
+        case "scissor":board.innerHTML="Scissor beats Paper"
+                        break
+        default: board.innerHTML="Do something bitch"
+    }
 }
 
-// Another way of declaring function
 
-const minus=function (a=0,b=0){
-    return a-b
-}
+
+rock.addEventListener('click', handler)
+paper.addEventListener('click', handler)
+scissor.addEventListener('click', handler)
 
