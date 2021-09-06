@@ -1,9 +1,22 @@
 
-const button=document.querySelector('button')
-const body = document.querySelector('body')
+// const rock=document.querySelector('#rock')
+// const paper=document.querySelector('#paper')
+// const scissor=document.querySelector('#scissor')
 
-console.log(button,body)
+// console.log(rock,paper,scissor)
+// var Name=10
 
-button.addEventListener('click',()=>{
-    body.classList.toggle('dark')
-})
+// function logName(){
+//     let Name="sdjfaladkfj"
+//     console.log(typeof Name)
+// }
+
+// logName()
+
+function add(a=0,b=0){
+    let sum=a+b
+    console.log(sum)
+    return sum
+}
+
+console.log(add())
