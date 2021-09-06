@@ -13,10 +13,18 @@
 
 // logName()
 
+
+console.log(add(99))
+console.log(minus(100))
+
 function add(a=0,b=0){
     let sum=a+b
-    console.log(sum)
     return sum
 }
 
-console.log(add())
+// Another way of declaring function
+
+const minus=function (a=0,b=0){
+    return a-b
+}
+
