@@ -33,6 +33,19 @@ const obj1 ={
 console.log(obj.email)
 
 let {Name,age,email} = obj
-let {Name1,age1,email1} = obj1
+let {Name1,age1,email1} = obj1 //object destructuring
 
 console.log(age1)
+
+let person ={
+    fname: "Anvith",
+    lname: "Ban",
+    age2: 21,
+    middlename: "DNA"
+}
+
+let {age2, fname, lname,middlename=""} = person // Default value will be overwritten
+console.log(age2)
+console.log(fname)
+console.log(lname)
+console.log(middlename)
