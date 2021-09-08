@@ -1,51 +1,19 @@
-console.log('Merged class 1 es6')
 
-const arr=[1,2,3,4]
+// ES6  Arrow function
 
-console.log(arr[2])
-
-const [one ,two ,three] =[1,2,3,4] //ES6 Destructuring
-
-console.log(three)
-
-function retur(){
-    return [90,100];
+let add= (x=0,y=0) => {
+    return x+y
 }
 
-let [x,y,z] = retur();
+console.log(add(5,6))
 
-console.log(x)
-console.log(y)
-console.log(z)
+// (this) keyword
 
-
-const obj ={
-    Name:"Anvith",
-    email: "1ms19@gmail.com",
-    age: 20
-}
-const obj1 ={
-    Name1:"adflakjd",
-    email1: "1afa@gmail.com",
-    age1: 29
+let counter ={
+    count:2,
+    next: function(){
+        return (this.count)++
+    }
 }
 
-console.log(obj.email)
-
-let {Name,age,email} = obj
-let {Name1,age1,email1} = obj1 //object destructuring
-
-console.log(age1)
-
-let person ={
-    fname: "Anvith",
-    lname: "Ban",
-    age2: 21,
-    middlename: "DNA"
-}
-
-let {age2, fname, lname,middlename=""} = person // Default value will be overwritten
-console.log(age2)
-console.log(fname)
-console.log(lname)
-console.log(middlename)
+console.log(counter.next())
