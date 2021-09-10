@@ -1,19 +1,18 @@
+// Maps (Similar to forEach but it returns the modified array with it unlike forEach)
 
-// ES6  Arrow function
+let ranks=[1,2,3,4]
 
-let add= (x=0,y=0) => {
-    return x+y
-}
+ranks.forEach((element,index) => {let ele=element+2
+    console.log(ele,index)})
 
-console.log(add(5,6))
+const modi=ranks.map((element,index)=>{let ele=element+2
+return ele})
 
-// (this) keyword
+console.log(modi)
 
-let counter ={
-    count:2,
-    next: function(){
-        return (this.count)++
-    }
-}
+const even =ranks.map((ele,index)=>{
+    if(ele%2===0)
+        return ele
+})
 
-console.log(counter.next())
+console.log(even)
