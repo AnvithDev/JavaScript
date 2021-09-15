@@ -35,7 +35,30 @@
 
 // Promises
 
-let concert = false ;
+// let concert = false ;
+
+// let attendConcert = new Promise(function(resolve,reject){
+//     setTimeout(()=> 
+//     {
+//         if(concert) 
+//             resolve("BOB ATTENDED THE CONCERT")
+//         else    
+//             reject("BOB FAILED TO ATTEND THE CONCERT")
+//     }, 2000)
+// })
+
+// console.log(attendConcert)
+// console.log(attendConcert)
+
+// attendConcert.then((data)=>console.log(data))
+
+// attendConcert.catch((data)=>console.log(data))
+
+// ----------------------------------------------------------
+
+// async await keyword = It is just an alternative for .then and .catch line above it makes it more readable
+
+let concert = true ;
 
 let attendConcert = new Promise(function(resolve,reject){
     setTimeout(()=> 
@@ -47,10 +70,12 @@ let attendConcert = new Promise(function(resolve,reject){
     }, 2000)
 })
 
-console.log(attendConcert)
-console.log(attendConcert)
-
-attendConcert.then((data)=>console.log(data))
-
-attendConcert.catch((data)=>console.log(data))
-
+let asyncfunc = async () => {
+    try{
+        let result= await attendConcert;
+        console.log(result)
+    }
+    catch(e){
+        console.log(e)
+    }
+}
